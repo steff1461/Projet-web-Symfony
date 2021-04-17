@@ -8,7 +8,7 @@ security:
     app_user_provider:
       entity:
         class: App\Entity\User
-        property: email
+        property: username
   firewalls:
     dev:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -32,8 +32,7 @@ security:
         authenticators:
           - lexik_jwt_authentication.jwt_token_authenticator
     main:
-      anonymous: true
-      lazy: true
+      anonymous: lazy
       provider: app_user_provider
 
       # activate different ways to authenticate
@@ -47,4 +46,4 @@ security:
   access_control:
       - { path: ^/api/docs, roles: IS_AUTHENTICATED_ANONYMOUSLY } # Allows accessing the Swagger UI
       - { path: ^/api/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-      - { path: ^/api/users, roles: IS_AUTHENTICATED_FULLY }
+#      - { path: ^/api/users, roles: IS_AUTHENTICATED_FULLY }

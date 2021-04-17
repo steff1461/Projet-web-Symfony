@@ -3,14 +3,41 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 use App\Repository\CommentRepository;
+use Symfony\Component\Serializer\Annotation\Groups;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
+ *
+ * /**
  * @ApiResource(
- * normalizationContext={"groups"={"read"}},
- * denormalizationContext={"groups"={"write"}}
- * )
+ * itemOperations={
+ *         "get",
+ *         "put",
+ *         "delete",
+ *         "patch"
+ *     },
+ * collectionOperations={
+ *     "get",
+ *     "post",
+ *     "comments_by_product"={{
+ *         "route_name"="comments_by_product",
+ *     "swagger_context" = {
+ *     "parameters" = {
+ *     "name" = "id",
+ *     "in" = "path",
+ *     "required" = "true",
+ *     "type" = "integer"
+ *     }}
+ *     },
+ *          "method"="GET" },
+ *         "comments_by_product",
+ *     },
+ *     normalizationContext={"groups"={"read"},"enable_max_depth"=true},
+ *     denormalizationContext={"groups"={"write"}})
+ *
+ *
  * @ORM\Entity(repositoryClass=CommentRepository::class)
  */
 class Comment
@@ -19,28 +46,41 @@ class Comment
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups("read")
      */
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=100, nullable=false)
+     * @Groups({"read", "write"})
      */
     private $content;
 
     /**
      * @ORM\Column(type="datetime")
+     * @Groups({"read", "write"})
      */
     private $createdAt;
 
     /**
      * @ORM\Column(type="integer")
+     * @Groups({"read", "write"})
      */
     private $rate;
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="comments")
+     * @ORM\Column(type="integer")
+     * @Groups({"read", "write"})
      */
-    private $user;
+    private $productId;
+
+    /**
+     * @ORM\Column(type="integer")
+     * @Groups({"read", "write"})
+     */
+    private $userId;
+
+
 
     public function getId(): ?int
     {
@@ -83,15 +123,40 @@ class Comment
         return $this;
     }
 
-    public function getUser(): ?User
+    /**
+     * @return mixed
+     */
+    public function getUserId()
     {
-        return $this->user;
+        return $this->userId;
     }
 
-    public function setUser(?User $user): self
+    /**
+     * @param mixed $userId
+     */
+    public function setUserId($userId): void
     {
-        $this->user = $user;
-
-        return $this;
+        $this->userId = $userId;
     }
+
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getProductId()
+    {
+        return $this->productId;
+    }
+
+    /**
+     * @param mixed $productId
+     */
+    public function setProductId($productId): void
+    {
+        $this->productId = $productId;
+    }
+
+
 }

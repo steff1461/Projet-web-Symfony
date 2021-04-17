@@ -3,40 +3,84 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use DateTime;
+use DateTimeZone;
+use PhpParser\Node\Expr\Array_;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
+use Symfony\Component\Serializer\Annotation\Groups;
 use App\Repository\PurchasingRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ApiResource()
  * @ORM\Entity(repositoryClass=PurchasingRepository::class)
+ * @ApiResource(
+ * itemOperations={
+ *         "get",
+ *         "put",
+ *         "delete",
+ *         "patch"
+ *     },
+ * collectionOperations={
+ *     "get",
+ *     "post",
+ *     "purchasings_by_user"={{
+ *         "route_name"="purchasings_by_user",
+ *     "swagger_context" = {
+ *     "parameters" = {
+ *     "name" = "id",
+ *     "in" = "path",
+ *     "required" = "true",
+ *     "type" = "integer"
+ *     }}
+ *     },
+ *          "method"="GET" },
+ *         "purchasings_by_user",
+ *     },
+ *     normalizationContext={"groups"={"read"},"enable_max_depth"=true},
+ *     denormalizationContext={"groups"={"write"}})
  */
 class Purchasing
 {
+
+    public function __construct()
+    {
+        $this->productsId = new Array_();
+        $dateTimeZone = new DateTimeZone('Europe/Paris');
+        try {
+            $this->createdAt = new DateTime('now', $dateTimeZone);
+        } catch (\Exception $e) {
+        }
+    }
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups("read")
      */
     private $id;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Product::class)
+     * @ORM\Column(type="datetime")
+     * @Groups("read")
      */
-    private $products;
+    private $createdAt;
+
 
     /**
-     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="purchasings")
-     * @ORM\JoinColumn(nullable=false)
+     * @var array
+     * @ORM\Column(name="products", type="array", length=15)
+     * @Groups({"read", "write"})
      */
-    private $user;
+    private $productsId;
 
-    public function __construct()
-    {
-        $this->products = new ArrayCollection();
-    }
-
+    /**
+     * @ORM\Column (type = "integer", nullable=false)
+     * @Groups({"read", "write"})
+     */
+    private $userId;
 
 
     public function getId()
@@ -44,39 +88,48 @@ class Purchasing
         return $this->id;
     }
 
+
+    public function getUserId()
+    {
+        return $this->userId;
+    }
+
+    public function setUserId($userId): void
+    {
+        $this->userId = $userId;
+    }
+
     /**
-     * @return Collection|Product[]
+     * @return array
      */
-    public function getProducts(): Collection
+    public function getProductsId(): array
     {
-        return $this->products;
+        return $this->productsId;
     }
 
-    public function addProduct(Product $product): self
+    /**
+     * @param array $productsId
+     */
+    public function setProductsId(array $productsId): void
     {
-        if (!$this->products->contains($product)) {
-            $this->products[] = $product;
-        }
-
-        return $this;
+        $this->productsId = $productsId;
     }
 
-    public function removeProduct(Product $product): self
+    /**
+     * @return DateTime
+     */
+    public function getCreatedAt(): DateTime
     {
-        $this->products->removeElement($product);
-
-        return $this;
+        return $this->createdAt;
     }
 
-    public function getUser(): ?User
+    /**
+     * @param DateTime $createdAt
+     */
+    public function setCreatedAt(DateTime $createdAt): void
     {
-        return $this->user;
+        $this->createdAt = $createdAt;
     }
 
-    public function setUser(?User $user): self
-    {
-        $this->user = $user;
 
-        return $this;
-    }
 }

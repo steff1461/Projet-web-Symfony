@@ -1,4 +1,6 @@
 api_platform:
+    eager_loading:
+      max_joins: 100
     title: 'Climbing eshop'
     description: 'Symfony API to manage climbing eshop'
     version: '1.0.0'

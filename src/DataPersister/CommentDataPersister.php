@@ -1,34 +1,34 @@
 <?php
 
+
 namespace App\DataPersister;
 
+
 use ApiPlatform\Core\DataPersister\ContextAwareDataPersisterInterface;
-use ApiPlatform\Core\DataPersister\DataPersisterInterface;
+use App\Entity\Comment;
 use App\Entity\Product;
-use App\Repository\CategoryRepository;
+use App\Repository\CommentRepository;
+use App\Repository\ProductRepository;
 use DateTime;
 use DateTimeZone;
 use Doctrine\ORM\EntityManagerInterface;
-use Psr\Log\LoggerInterface;
 use Symfony\Component\Config\Definition\Exception\Exception;
 
-class ProductDataPersister implements ContextAwareDataPersisterInterface
+class CommentDataPersister implements ContextAwareDataPersisterInterface
 {
 
     private $entityManager;
-    private $categoryRepository;
+    private $commentRepository;
 
     public function __construct(EntityManagerInterface $entityManager,
-                                CategoryRepository $categoryRepository)
+                                CommentRepository $commentRepository)
     {
         $this->entityManager = $entityManager;
-        $this -> categoryRepository = $categoryRepository;
-
+        $this->commentRepository = $commentRepository;
     }
 
-
     /**
-     * @param Product $data
+     * @param Comment $data
      * @param array $context
      * @throws Exception
      */
@@ -36,17 +36,18 @@ class ProductDataPersister implements ContextAwareDataPersisterInterface
     {
         $dateTimeZone = new DateTimeZone('Europe/Paris');
         try {
-            $data->setUpdatedAt(new DateTime('now', $dateTimeZone));
+            if ($data->getCreatedAt() == null) {
+                $data->setCreatedAt(new DateTime('now', $dateTimeZone));
+            }
         } catch (\Exception $e) {
         }
-        $this -> entityManager -> persist($data);
-        $this -> entityManager -> flush();
+        $this->entityManager->persist($data);
+        $this->entityManager->flush();
     }
-
 
     public function supports($data, array $context = []): bool
     {
-        return $data instanceof Product;
+        return $data instanceof Comment;
     }
 
     public function remove($data, array $context = [])

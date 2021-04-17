@@ -7,6 +7,7 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-json": "*",
         "api-platform/core": "^2.6",
         "composer/package-versions-deprecated": "1.11.99.1",
         "doctrine/annotations": "^1.0",
@@ -16,6 +17,7 @@
         "lexik/jwt-authentication-bundle": "^2.11",
         "nelmio/cors-bundle": "^2.1",
         "phpdocumentor/reflection-docblock": "^5.2",
+        "symfony/apache-pack": "^1.0",
         "symfony/asset": "5.2.*",
         "symfony/console": "5.2.*",
         "symfony/dotenv": "5.2.*",
@@ -29,7 +31,8 @@
         "symfony/serializer": "5.2.*",
         "symfony/twig-bundle": "5.2.*",
         "symfony/validator": "5.2.*",
-        "symfony/yaml": "5.2.*"
+        "symfony/yaml": "5.2.*",
+        "vich/uploader-bundle": "^1.17"
     },
     "config": {
         "optimize-autoloader": true,

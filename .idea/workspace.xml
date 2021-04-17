@@ -2,15 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DataPersister/ProductDataPersister.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataPersister/UserDataPersister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/badurier-6074a4dd45652563881214.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/badurier-6079c239eb45d328332991.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/casque-6074a4e1995f6515834082.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/casque-6079c235aad50552475188.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/chausson-6079c34bebe2e182061335.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/mousqueton-6074a4e5a8b73689209179.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/mousqueton-6079c230e9f06887178722.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-black-60566458dde89634609676.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-black-605753b38a4d1437512764.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-605664b0bfc1a646072803.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-6058e5e891825442833430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-605fa2fad8420829961534.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/img/westpolecv-william-steffen-recuperation-automatique-605664bdc73f2455708613.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CommentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PurchasingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataPersister/CommentDataPersister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Address.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/MediaObject.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventListener/AuthenticationSuccessListener.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/ResolveMediaObjectContentUrlSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/AddressRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MediaObjectRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/climbing-eshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/climbing-eshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210302135552.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataPersister/ProductDataPersister.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPersister/ProductDataPersister.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Purchasing.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Purchasing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,10 +62,20 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -53,7 +105,6 @@
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
-      <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/link" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
@@ -85,17 +136,14 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
-      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
       <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
@@ -103,8 +151,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge" />
-      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
-      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -113,6 +159,21 @@
       <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
       <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1oqSdUKd6ZioNobruvoVByQ8GVL" />
@@ -124,12 +185,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/jwt" />
+    <property name="last_opened_file_path" value="D:/climbing-eshop" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\w.steffen\PhpstormProjects\eshop-php-api\config\jwt" />
       <recent name="C:\Users\William\Documents\Cours\BacInfo 3\symfony\climbing-eshop\config\jwt" />
     </key>
   </component>
@@ -145,6 +208,37 @@
       <workItem from="1614681692583" duration="790000" />
       <workItem from="1614682519780" duration="5298000" />
       <workItem from="1614692976661" duration="5489000" />
+      <workItem from="1615228790076" duration="3634000" />
+      <workItem from="1615232701568" duration="1862000" />
+      <workItem from="1615834084383" duration="309000" />
+      <workItem from="1616264114601" duration="7825000" />
+      <workItem from="1616274831852" duration="5155000" />
+      <workItem from="1616353691134" duration="1598000" />
+      <workItem from="1616437319146" duration="12217000" />
+      <workItem from="1616607413824" duration="6688000" />
+      <workItem from="1616872396521" duration="4123000" />
+      <workItem from="1616959488856" duration="1705000" />
+      <workItem from="1616964419466" duration="488000" />
+      <workItem from="1617042708263" duration="3219000" />
+      <workItem from="1617733204927" duration="2276000" />
+      <workItem from="1617801890213" duration="598000" />
+      <workItem from="1617805536061" duration="392000" />
+      <workItem from="1617820094494" duration="5774000" />
+      <workItem from="1617976125709" duration="47000" />
+      <workItem from="1618162641326" duration="1272000" />
+      <workItem from="1618219778826" duration="594000" />
+      <workItem from="1618252305253" duration="4662000" />
+      <workItem from="1618300646193" duration="657000" />
+      <workItem from="1618332001293" duration="1302000" />
+      <workItem from="1618405966926" duration="23000" />
+      <workItem from="1618419008094" duration="1936000" />
+      <workItem from="1618422577238" duration="1794000" />
+      <workItem from="1618481114531" duration="10000" />
+      <workItem from="1618484705424" duration="1203000" />
+      <workItem from="1618491702085" duration="614000" />
+      <workItem from="1618591573731" duration="2355000" />
+      <workItem from="1618677928836" duration="4960000" />
+      <workItem from="1618685443599" duration="787000" />
     </task>
     <servers />
   </component>

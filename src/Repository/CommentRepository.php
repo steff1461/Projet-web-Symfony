@@ -19,6 +19,15 @@ class CommentRepository extends ServiceEntityRepository
         parent::__construct($registry, Comment::class);
     }
 
+    public function findAllByProduct($productId): array
+    {
+
+        return $this->findBy(
+
+            ['productId' => $productId]
+            );
+    }
+
     // /**
     //  * @return Comment[] Returns an array of Comment objects
     //  */
