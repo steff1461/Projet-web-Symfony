@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="" />
+    <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +186,7 @@
       <workItem from="1618491702085" duration="614000" />
       <workItem from="1618591573731" duration="2355000" />
       <workItem from="1618677928836" duration="4960000" />
-      <workItem from="1618685443599" duration="1860000" />
+      <workItem from="1618685443599" duration="2349000" />
     </task>
     <servers />
   </component>
