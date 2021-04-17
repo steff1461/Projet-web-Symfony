@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/badurier-6074a4dd45652563881214.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/badurier-6079c239eb45d328332991.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/casque-6074a4e1995f6515834082.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/casque-6079c235aad50552475188.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/chausson-6079c34bebe2e182061335.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/mousqueton-6074a4e5a8b73689209179.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/mousqueton-6079c230e9f06887178722.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-black-60566458dde89634609676.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-black-605753b38a4d1437512764.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-605664b0bfc1a646072803.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-6058e5e891825442833430.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/webook-logo-bold-salmon-605fa2fad8420829961534.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/westpolecv-william-steffen-recuperation-automatique-605664bdc73f2455708613.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CommentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/PurchasingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataPersister/CommentDataPersister.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Address.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/MediaObject.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventListener/AuthenticationSuccessListener.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/ResolveMediaObjectContentUrlSubscriber.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AddressRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/MediaObjectRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/climbing-eshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/climbing-eshop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes/api_platform.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210302135552.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataPersister/ProductDataPersister.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataPersister/ProductDataPersister.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Purchasing.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Purchasing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CommentRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +187,7 @@
       <workItem from="1618491702085" duration="614000" />
       <workItem from="1618591573731" duration="2355000" />
       <workItem from="1618677928836" duration="4960000" />
-      <workItem from="1618685443599" duration="787000" />
+      <workItem from="1618685443599" duration="1108000" />
     </task>
     <servers />
   </component>

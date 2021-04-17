@@ -10,6 +10,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\MaxDepth;
 
+
 /**
  * @ApiResource(
  * normalizationContext={"groups"={"read"},"enable_max_depth"=true},
