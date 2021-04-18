@@ -17,6 +17,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ApiResource(
+ * attributes={"pagination_items_per_page"=10},
  * itemOperations={
  *         "get",
  *         "put",
