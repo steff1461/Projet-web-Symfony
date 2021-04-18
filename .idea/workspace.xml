@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="">
+    <list default="true" id="d94ac897-dd24-459e-b6a6-72e2c7bf676c" name="Default Changelist" comment="c">
       <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +145,9 @@
       <recent name="C:\Users\w.steffen\PhpstormProjects\eshop-php-api\config\jwt" />
       <recent name="C:\Users\William\Documents\Cours\BacInfo 3\symfony\climbing-eshop\config\jwt" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\w.steffen\PhpstormProjects\eshop-php-api" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -190,8 +192,16 @@
       <workItem from="1618591573731" duration="2355000" />
       <workItem from="1618677928836" duration="4960000" />
       <workItem from="1618685443599" duration="3732000" />
-      <workItem from="1618745052589" duration="5135000" />
+      <workItem from="1618745052589" duration="5534000" />
     </task>
+    <task id="LOCAL-00001" summary="c">
+      <created>1618751365385</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618751365385</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,5 +218,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="c" />
+    <option name="LAST_COMMIT_MESSAGE" value="c" />
   </component>
 </project>
