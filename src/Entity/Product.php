@@ -21,7 +21,13 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  *         "get",
  *         "put",
  *         "delete",
- *         "patch"
+ *         "patch",
+ *         "products_count" = {{
+ *          "route_name": "products_count"
+ *
+ *     },
+ *     "method"="GET"
+ *     },
  *     },
  * collectionOperations={
  *     "get",

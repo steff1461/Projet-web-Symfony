@@ -35,6 +35,9 @@
         "vich/uploader-bundle": "^1.17"
     },
     "config": {
+        "platform": {
+            "php": "7.4.16"
+        },
         "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"

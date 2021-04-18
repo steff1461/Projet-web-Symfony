@@ -43,4 +43,30 @@ class ProductController extends AbstractController
         return $response;
 
     }
+
+    /**
+     *
+     * @param ProductRepository $productRepository
+     * @param Request $request
+     * @return Response
+     * @Route(
+     *     name="products_count",
+     *     path="/api/products/count",
+     *     methods={"GET"},
+     *     defaults={
+     *         "api_resource_class"=Product::class,
+     *         "api_item_operation_name"="products_count"
+     *     }
+     *     )
+     */
+    public function findProductCount(ProductRepository $productRepository, Request $request): Response
+    {
+        $products = $productRepository->findAll();
+        $productCount = new \ProductCount();
+        $productCount -> setProductCount( count($products));
+        $data = $this->get('serializer')->serialize($productCount, 'json');
+        $response = new Response($data);
+        $response->headers->set('Content-type', 'application/json');
+        return $response;
+    }
 }
