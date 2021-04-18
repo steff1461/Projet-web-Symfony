@@ -46,7 +46,6 @@ class Purchasing
 
     public function __construct()
     {
-        $this->productsId = new Array_();
         $dateTimeZone = new DateTimeZone('Europe/Paris');
         try {
             $this->createdAt = new DateTime('now', $dateTimeZone);
@@ -74,7 +73,7 @@ class Purchasing
      * @ORM\Column(name="products", type="array", length=15)
      * @Groups({"read", "write"})
      */
-    private $productsId;
+    private $productsId = [];
 
     /**
      * @ORM\Column (type = "integer", nullable=false)
