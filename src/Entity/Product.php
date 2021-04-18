@@ -32,7 +32,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  *     },
  * collectionOperations={
  *     "get",
- *     "post",
+ *     "post"={"security"="is_granted('ROLE_ADMIN')"},
  *     "products_by_cat"={{
  *         "route_name"="products_by_category",
  *     "swagger_context" = {

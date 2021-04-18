@@ -13,6 +13,10 @@ use Symfony\Component\Serializer\Annotation\MaxDepth;
 
 /**
  * @ApiResource(
+ *     collectionOperations={
+ *     "get",
+ *     "post"={"security"="is_granted('ROLE_ADMIN')"}
+ *     },
  * normalizationContext={"groups"={"read"},"enable_max_depth"=true},
  * denormalizationContext={"groups"={"write"}}
  * )
