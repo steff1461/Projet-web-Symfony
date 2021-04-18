@@ -52,8 +52,9 @@ class User implements UserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="json",nullable=false)
-     * @Groups("read")
+     * @var array
+     * @ORM\Column(name="roles", type="array", length=50)
+     * @Groups({"read", "write"})
      */
     private $roles = [];
 
@@ -94,11 +95,6 @@ class User implements UserInterface
      */
     private $addressId;
 
-    public function __construct()
-    {
-        $this->purchasings = new ArrayCollection();
-    }
-
 
     public function getId(): ?int
     {
@@ -132,8 +128,7 @@ class User implements UserInterface
      */
     public function getRoles(): array
     {
-        $roles = $this->roles;
-        return array_unique($roles);
+        return $this->roles;
     }
 
     public function setRoles(array $roles): self
@@ -165,9 +160,6 @@ class User implements UserInterface
     }
 
     /**
-     * Returning a salt is only needed, if you are not using a modern
-     * hashing algorithm (e.g. bcrypt or sodium) in your security.yaml.
-     *
      * @see UserInterface
      */
     public function getSalt(): ?string
