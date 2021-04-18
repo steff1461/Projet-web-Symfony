@@ -59,7 +59,7 @@ class User implements UserInterface
 
     /**
      * @var string The hashed password
-     * @ORM\Column(type="string",nullable=false, length=20)
+     * @ORM\Column(type="string",nullable=false, length=150)
      * @Groups("write")
      */
     private $password;
